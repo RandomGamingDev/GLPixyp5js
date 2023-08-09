@@ -1,5 +1,5 @@
 # GLPixyp5js
-Pixy from Wireframe, but for p5js's WebGL mode (although it can be used with pure WebGL or libraries that can interact with pure WebGL)
+Pixy from Wireframe, but for p5js's WebGL2 mode (although it can be used with pure WebGL2 or libraries that can interact with pure WebGL)
 
 Pixy (Credit to Nyaaborn for the name, you can find his github here: https://github.com/Nyaaboron) from Wireframe, but for p5js's WebGL mode
 
