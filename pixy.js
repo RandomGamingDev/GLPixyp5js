@@ -33,7 +33,7 @@ class GLPixy {
   getPixel(loc) {
     const pixPos = this.getPixPos(loc);
     const pix = new Array(this.pixSize);
-    for (const i in pix)
+    for (let i = 0; i < this.pixSize; i++)
       pix[i] = this.img.pixel[pixPos + i];
     return pix;
   }
