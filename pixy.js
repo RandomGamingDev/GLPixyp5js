@@ -49,7 +49,7 @@ class GLPixy {
   }
 
   display(shad) {
-    pixy.img.setUniform(shad._glProgram, "uSampler");
+    this.img.setUniform(shad._glProgram, "uSampler");
     this.rdr.rect(this.off[0], this.off[1], this.size[0], this.size[1]);
   }
 }
