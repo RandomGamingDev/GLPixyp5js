@@ -22,8 +22,8 @@ class GLPixy {
   }
 
   setInterpolation(min, mag) {
-    img.paramI(this.gl.TEXTURE_MAG_FILTER, min);
-    img.paramI(this.gl.TEXTURE_MIN_FILTER, mag);
+    this.img.paramI(this.gl.TEXTURE_MAG_FILTER, min);
+    this.img.paramI(this.gl.TEXTURE_MIN_FILTER, mag);
   }
 
   getPixPos(loc) {
