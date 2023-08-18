@@ -13,7 +13,7 @@ The only part of this library that's p5.js specific is the `display()` function 
 
 To use the library simply create a new instance of the pixy class with the offset, size and resolution (they're all arrays with 2 elements) and the texture and fbo that are being used and then just change the Pixy.pixels array via Pixy.setPixel(), update the pixel buffer via Pixy.updatePixels() and execute Pixy.display() in order to display.
 
-This library expects the [WebGL2Tex](https://github.com/RandomGamingDev/WebGL2Tex) and [WebGL2FBO](https://github.com/RandomGamingDev/WebGL2FBO) libraries which are there to make things easier. This library also expects that you either use a version of p5.js newer or the same as `1.7.0` or that you use [WebGL2p5](https://github.com/RandomGamingDev/WebGL2p5) to add it to older versions.
+This library expects the [WebGL2Tex](https://github.com/RandomGamingDev/WebGL2Tex) and [WebGL2FBO](https://github.com/RandomGamingDev/WebGL2FBO) libraries which are there to make things easier as well as follow the directions for them, for instance WebGL2Tex's directions for p5.js use. This library also expects that you either use a version of p5.js newer or the same as `1.7.0` or that you use [WebGL2p5](https://github.com/RandomGamingDev/WebGL2p5) to add it to older versions.
 
 To use it you can simply include https://cdn.jsdelivr.net/gh/RandomGamingDev/GLPixyp5js/pixy.js in your HTML file! If you want to you can also just download the file and include it in your HTML file that way.
 
