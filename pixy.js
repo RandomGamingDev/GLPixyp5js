@@ -12,8 +12,11 @@ class GLPixy {
     this.canvas = canvas;
   }
 
-  loadPixels() {
+  linkFBO() {
     this.fbo.linkTexture2D(this.gl.COLOR_ATTACHMENT0, this.img.bufType, this.img.tex, this.img.level);
+  }
+
+  loadPixels() {
     this.fbo.readPixels(0, 0, this.img.res[0], this.img.res[1], this.img.srcFormat, this.img.srcType, this.img.pixel);
   }
 
