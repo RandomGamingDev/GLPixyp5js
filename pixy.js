@@ -49,8 +49,29 @@ class GLPixy {
       this.img.pixel[pixPos + i] = col[i];
   }
 
-  clear() {
-    this.gl.clear(gl.COLOR_BUFFER_BIT);
+  clearSoft() {
+    const pixyBuffer = this.img.pixel;
+    const clearRegions = [Math.floor(pixyBuffer.byteLength / Float64Array.BYTES_PER_ELEMENT), undefined];
+      clearRegions[1] = pixyBuffer.byteLength - clearRegions[0] * Float64Array.BYTES_PER_ELEMENT;
+    const clear64 = new Float64Array(pixyBuffer, 0, clearRegions[0]);
+    const clear8 = new Int8Array(pixyBuffer, clear64.byteLength, clearRegions[1]);
+
+    for (let i = 0; i < clear64.length; i++)
+        clear64[i] = 0;
+    for (let i = 0; i < clear8.length; i++)
+        clear8[i] = 0; 
+  }
+
+  clearFloat(color = [0, 0, 0, 0]) {
+    this.gl.clearBufferfv(gl.COLOR, 0, new Float32Array(color));
+  }
+
+  clearInt(color = [0, 0, 0, 0]) {
+    this.gl.clearBufferiv(gl.COLOR, 0, new Int32Array(color));
+  }
+
+  clearUint(color = [0, 0, 0, 0]) {
+    this.gl.clearBufferuiv(gl.COLOR, 0, new Uint32Array(color));
   }
 
   display(shad) {
