@@ -1,5 +1,5 @@
 class GLPixy {
-  constructor(off, size, img, pixSize, fbo, link = true, rdr = window, canvas = _renderer, gl = drawingContext) {
+  constructor(off, size, img, pixSize, fbo, link = true, load = true, rdr = window, canvas = _renderer, gl = drawingContext) {
     this.gl = gl;
     this.off = off;
     this.size = size;
@@ -9,7 +9,8 @@ class GLPixy {
     this.fbo = fbo;
     if (link)
       this.linkFBO();
-    this.loadPixels();
+    if (load)
+      this.loadPixels();
     this.rdr = rdr;
     this.canvas = canvas;
   }
