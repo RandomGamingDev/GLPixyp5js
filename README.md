@@ -5,7 +5,9 @@ Pixy (Credit to Nyaaborn for the name, you can find his github here: https://git
 
 Pixyp5js is a version of [Pixy](https://github.com/RandomGamingDev/Wireframe/blob/main/Extensions/Pixy.h) (which is for the [Wireframe](https://github.com/RandomGamingDev/Wireframe)), but for p5js!
 
-It's also based on this version of [Pixy](https://github.com/RandomGamingDev/Pixyp5js) designed for both p5.js's canvas and WebGL modes, which is heavily limited due to having to work with both, which is why I created this version specifically for WebGL!
+It's also based on this version of [Pixy](https://github.com/RandomGamingDev/Pixyp5js) designed for both p5.js's canvas and WebGL modes, which is heavily limited due to having to work with both, which is why I created this version specifically for WebGL which allows the abstraction and simplification reading from and modification of custom WebGL textures!
+
+<img src="GLPixyp5js.png" width="512" />
 
 This library's class's structure is similar in nature to that of the version of [pixy](https://github.com/RandomGamingDev/Pixyp5js) previously talked about and expects you to bind and unbind everything as well as set variables like the `gl.UNPACK_ALIGNMENT` and `gl.PACK_ALIGNMENT` yourself as well as allocate the bytes on the CPU for the texture uploading and loading.
 
