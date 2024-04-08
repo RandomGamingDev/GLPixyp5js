@@ -5,7 +5,9 @@ Pixy (Credit to Nyaaborn for the name, you can find his github here: https://git
 
 Pixyp5js is a version of [Pixy](https://github.com/RandomGamingDev/Wireframe/blob/main/Extensions/Pixy.h) (which is for the [Wireframe](https://github.com/RandomGamingDev/Wireframe)), but for p5js!
 
-It's also based on this version of [Pixy](https://github.com/RandomGamingDev/Pixyp5js) designed for both p5.js's canvas and WebGL modes, which is heavily limited due to having to work with both, which is why I created this version specifically for WebGL which allows the abstraction and simplification reading from and modification of custom WebGL textures!
+It's also based on this version of [Pixy](https://github.com/RandomGamingDev/Pixyp5js) designed for both p5.js's canvas and WebGL modes, which is heavily limited due to having to work with both, which is why I created this version specifically for WebGL.
+
+It allows the abstraction and simplification reading from and modification of custom WebGL textures which offers much more control when needed for things like GLSL based computation, custom data types for things like depth maps, or more efficient textures in general!
 
 <img src="GLPixyp5js.png" width="512" />
 
