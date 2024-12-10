@@ -9,8 +9,6 @@ It's also based on this version of [Pixy](https://github.com/RandomGamingDev/Pix
 
 It allows the abstraction and simplification reading from and modification of custom WebGL textures which offers much more control when needed for things like GLSL based computation, custom data types for things like depth maps, or more efficient textures in general!
 
-<img src="GLPixyp5js.png" width="512" />
-
 This library's class's structure is similar in nature to that of the version of [pixy](https://github.com/RandomGamingDev/Pixyp5js) previously talked about and expects you to bind and unbind everything as well as set variables like the `gl.UNPACK_ALIGNMENT` and `gl.PACK_ALIGNMENT` yourself as well as allocate the bytes on the CPU for the texture uploading and loading.
 
 The only part of this library that's p5.js specific is the `display()` function so you can use this with any other library that can interact with raw WebGL.
